@@ -39,7 +39,7 @@ const Header = () => {
                 isScrolled ? 'text-gray-900' : 'text-white'
               }`}
             >
-              Your Name
+              SUGANYA PRAGASAM
             </button>
           </div>
 
