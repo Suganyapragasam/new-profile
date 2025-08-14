@@ -75,7 +75,7 @@ const Hero = () => {
               View My Work
             </button>
             <a
-  href="/resume.pdf"
+  href="/new-profile/resume.pdf"
   target="_blank"
   rel="noopener noreferrer"
   className="group flex items-center gap-2 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 border border-white/20"
