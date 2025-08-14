@@ -5,31 +5,33 @@ const Skills = () => {
     {
       title: 'Frontend Development',
       skills: [
-        { name: 'React', level: 95 },
-        { name: 'TypeScript', level: 90 },
+        { name: 'Flutter', level: 95 },
+        { name: 'Dart', level: 90 },
+        { name: 'React', level: 65 },
         { name: 'Next.js', level: 85 },
-        { name: 'Tailwind CSS', level: 92 },
-        { name: 'JavaScript', level: 95 }
+        { name: 'Tailwind CSS', level: 52 },
+        { name: 'JavaScript', level: 60 }
       ]
     },
     {
       title: 'Backend Development',
       skills: [
         { name: 'Node.js', level: 88 },
-        { name: 'Python', level: 85 },
-        { name: 'PostgreSQL', level: 80 },
-        { name: 'MongoDB', level: 75 },
+        { name: 'firebase', level: 85 },
+        { name: 'PostgreSQL', level: 50 },
         { name: 'REST APIs', level: 90 }
       ]
     },
     {
       title: 'Tools & Technologies',
       skills: [
-        { name: 'Git', level: 92 },
-        { name: 'Docker', level: 78 },
-        { name: 'AWS', level: 75 },
-        { name: 'Figma', level: 80 },
-        { name: 'VS Code', level: 95 }
+        { name: 'Android Studio', level: 92 },
+        { name: 'Xcode', level: 85 },
+        { name: 'Git', level: 95 },
+        { name: 'Firebase', level: 80 },
+        { name: 'Visual Studio Code', level: 90 },
+        { name: 'Postman', level: 70 }
+       
       ]
     }
   ];
@@ -90,8 +92,8 @@ const Skills = () => {
           </h3>
           <div className="flex flex-wrap justify-center gap-4">
             {[
-              'GraphQL', 'Redux', 'Jest', 'Cypress', 'Webpack', 'Vite', 
-              'Firebase', 'Supabase', 'Linux', 'CI/CD', 'Agile', 'Scrum'
+              'Hive', 'Objective C', 'PWA Development', 'Unit testing', 'Postman', 'Vite', 
+              'Firebase', 'Widget Testing', 'Integraation Testing', 'CI/CD', 'Agile', 'Scrum'
             ].map((tech, index) => (
               <span
                 key={index}

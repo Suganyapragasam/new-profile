@@ -21,8 +21,8 @@ const Footer = () => {
 
           {/* Logo/Name */}
           <div className="text-center">
-            <h3 className="text-2xl font-bold mb-2">Your Name</h3>
-            <p className="text-gray-400">Software Developer & Creative Problem Solver</p>
+            <h3 className="text-2xl font-bold mb-2">Suganya Pragasam</h3>
+            <p className="text-gray-400">Mobile App Developer & Freelancer</p>
           </div>
 
           {/* Navigation Links */}
@@ -49,7 +49,7 @@ const Footer = () => {
           {/* Copyright */}
           <div className="text-center text-gray-400">
             <p className="flex items-center justify-center gap-2">
-              © {new Date().getFullYear()} Your Name. Made with 
+              © {new Date().getFullYear()} Suganya Pragasam. Made with 
               <Heart size={16} className="text-red-500 animate-pulse" />
               and lots of coffee.
             </p>

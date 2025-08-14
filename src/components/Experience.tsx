@@ -4,43 +4,45 @@ import { Calendar, MapPin, ExternalLink } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: 'Senior Software Developer',
-      company: 'Tech Innovations Inc.',
-      location: 'San Francisco, CA',
-      period: '2022 - Present',
-      description: 'Led a team of 5 developers in building scalable web applications using React, Node.js, and AWS. Implemented CI/CD pipelines and reduced deployment time by 60%.',
+      title: 'Software Engineer – Flutter Developer',
+      company: 'Bhumaha Solution Private Ltd, Chennai, India',
+      location: 'Chennai, India',
+      period: 'July 2022 - March 2024',
+      description: 'Designed, developed, tested, and deployed mobile and PWA applications using Flutter and Dart, contributing to successful project delivery across Android, iOS, and PWA platforms.',
       achievements: [
-        'Architected and developed 3 major product features serving 100k+ users',
-        'Mentored junior developers and conducted code reviews',
-        'Optimized application performance resulting in 40% faster load times'
+        'Developed applications with a single codebase for multiple platforms',
+        'Implemented REST APIs and integrated backend services using Firebase and Hive',
+        'Collaborated with clients to gather requirements and deliver technical solutions',
+        'Applied clean architecture, state management (Provider, BLoC), and testing frameworks (Unit, Widget/Integration tests)',
+        'Optimized app performance and ensured smooth UI/UX across platforms'
       ],
-      technologies: ['React', 'TypeScript', 'Node.js', 'AWS', 'PostgreSQL']
+      technologies: ['Flutter', 'Dart', 'Firebase', 'Hive', 'REST APIs', 'CI/CD']
     },
     {
-      title: 'Full Stack Developer',
-      company: 'Digital Solutions Ltd.',
-      location: 'New York, NY',
-      period: '2020 - 2022',
-      description: 'Developed and maintained multiple client projects using modern web technologies. Collaborated with design teams to create pixel-perfect user interfaces.',
+      title: 'Account Manager',
+      company: 'MAST Contracting, Ras al Khaimah, UAE',
+      location: 'Ras al Khaimah, UAE',
+      period: 'July 2012 – Jan 2017',
+      description: 'Managed job vacancies and administrative tasks, including paperwork and website maintenance.',
       achievements: [
-        'Built 15+ responsive web applications from concept to deployment',
-        'Integrated third-party APIs and payment systems',
-        'Improved code quality by implementing testing strategies'
+        'Handled administrative operations efficiently',
+        'Managed documentation and streamlined processes',
+        'Maintained website updates and job postings'
       ],
-      technologies: ['Vue.js', 'Python', 'Django', 'MongoDB', 'Docker']
+      technologies: ['Microsoft Office', 'Website CMS', 'Project Management']
     },
     {
-      title: 'Junior Web Developer',
-      company: 'StartUp Dynamics',
-      location: 'Remote',
-      period: '2019 - 2020',
-      description: 'Started my professional journey contributing to various web development projects. Focused on frontend development and user experience optimization.',
+      title: 'Software Engineer',
+      company: 'HCL Technologies, Chennai, India',
+      location: 'Chennai, India',
+      period: 'Dec 2009 - Aug 2011',
+      description: 'Designed interfaces, developed iOS applications, and liaised with clients to deliver software solutions.',
       achievements: [
-        'Converted 20+ design mockups into responsive web pages',
-        'Participated in agile development processes',
-        'Learned and adapted to new technologies quickly'
+        'Developed iOS applications and UI components',
+        'Coordinated with clients for requirement gathering',
+        'Implemented features according to client specifications'
       ],
-      technologies: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Bootstrap']
+      technologies: ['iOS Development', 'Objective-C', 'UI Design', 'Client Coordination']
     }
   ];
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import { ChevronDown, Download, Github, Linkedin, Mail } from 'lucide-react';
+import { ChevronDown,  Github, Linkedin, Mail } from 'lucide-react';
+import profilePic from '../assets/sugan_profile_pic.jpg';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -37,8 +38,8 @@ const Hero = () => {
           {/* Profile Image */}
           <div className="mx-auto w-32 h-32 rounded-full overflow-hidden border-4 border-white/20 backdrop-blur-sm shadow-2xl">
             <img
-              src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=400"
-              alt="Profile"
+              src={profilePic}
+              alt="Suganya Pragasam"
               className="w-full h-full object-cover"
             />
           </div>
@@ -48,19 +49,22 @@ const Hero = () => {
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-bold text-white leading-tight">
               Hi, I'm{' '}
               <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
-                Your Name
+                Suganya Pragasam
               </span>
             </h1>
             <p className="text-xl sm:text-2xl lg:text-3xl text-white/90 font-light">
-              Software Developer & Creative Problem Solver
+              Mobile App Developer | Freelancer | flutter Developer
             </p>
           </div>
 
+        
           {/* Description */}
-          <p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
-            Passionate about creating exceptional digital experiences through clean code, 
-            innovative design, and cutting-edge technologies.
-          </p>
+<p className="text-lg sm:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed">
+  Mobile App Developer specializing in Flutter and Dart, creating sleek, 
+  responsive, and user-friendly applications. Focused on delivering 
+  high-quality solutions with clean architecture and exceptional UI/UX.
+</p>
+
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-8">
@@ -70,29 +74,41 @@ const Hero = () => {
             >
               View My Work
             </button>
-            <button className="group flex items-center gap-2 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 border border-white/20">
-              <Download size={20} />
-              Download Resume
-            </button>
+            <a
+  href="/resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group flex items-center gap-2 bg-white/10 backdrop-blur-md hover:bg-white/20 text-white px-8 py-4 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 border border-white/20"
+>
+  View Resume
+</a>
+
           </div>
 
           {/* Social Links */}
-          <div className="flex items-center justify-center gap-6 pt-8">
-            {[
-              { icon: Github, href: '#', label: 'GitHub' },
-              { icon: Linkedin, href: '#', label: 'LinkedIn' },
-              { icon: Mail, href: '#', label: 'Email' }
-            ].map(({ icon: Icon, href, label }) => (
-              <a
-                key={label}
-                href={href}
-                className="group p-3 rounded-full bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 transform hover:scale-110 border border-white/20"
-                aria-label={label}
-              >
-                <Icon size={24} className="text-white group-hover:text-blue-300 transition-colors duration-300" />
-              </a>
-            ))}
-          </div>
+<div className="flex items-center justify-center gap-6 pt-8">
+  {[
+    { icon: Github, href: 'https://github.com/Suganyapragasam', label: 'GitHub' },
+    { 
+      icon: Linkedin, 
+      href: 'https://www.linkedin.com/in/suganya-pragasam-53a771217', 
+      label: 'LinkedIn' 
+    },
+    { icon: Mail, href: 'mailto:suganya.pragasam28@gmail.com', label: 'Email' }
+  ].map(({ icon: Icon, href, label }) => (
+    <a
+      key={label}
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group p-3 rounded-full bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 transform hover:scale-110 border border-white/20"
+      aria-label={label}
+    >
+      <Icon size={24} className="text-white group-hover:text-blue-300 transition-colors duration-300" />
+    </a>
+  ))}
+</div>
+
         </div>
 
         {/* Scroll indicator */}

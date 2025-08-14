@@ -1,46 +1,42 @@
-import React, { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from 'lucide-react';
+//import React, { useState } from 'react';
+//import { Mail, MapPin, Send, Github, Linkedin, } from 'lucide-react';
+import { Mail, MapPin, Github, Linkedin, } from 'lucide-react';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
+  // const [formData, setFormData] = useState({
+  //   name: '',
+  //   email: '',
+  //   subject: '',
+  //   message: ''
+  // });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
-    // Reset form
-    setFormData({ name: '', email: '', subject: '', message: '' });
-  };
+  // const handleSubmit = (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   // Handle form submission here
+  //   console.log('Form submitted:', formData);
+  //   // Reset form
+  //   setFormData({ name: '', email: '', subject: '', message: '' });
+  // };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
-  };
+  // const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  //   setFormData({
+  //     ...formData,
+  //     [e.target.name]: e.target.value
+  //   });
+  // };
 
   const contactInfo = [
     {
       icon: Mail,
       label: 'Email',
-      value: 'your.email@example.com',
+      value: 'suganya.pragasam28@gmail.com',
       href: 'mailto:your.email@example.com'
     },
-    {
-      icon: Phone,
-      label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
-    },
+   
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Abu dhabi, UAE',
       href: '#'
     }
   ];
@@ -58,12 +54,7 @@ const Contact = () => {
       href: '#',
       color: 'hover:text-blue-600'
     },
-    {
-      icon: Twitter,
-      label: 'Twitter',
-      href: '#',
-      color: 'hover:text-blue-400'
-    }
+   
   ];
 
   return (
@@ -79,7 +70,7 @@ const Contact = () => {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        {/* <div className="grid lg:grid-cols-2 gap-12"> */}
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
@@ -135,7 +126,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
+          {/* <div className="bg-white p-8 rounded-xl shadow-lg border border-gray-100">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Send Message
             </h3>
@@ -214,9 +205,9 @@ const Contact = () => {
                 Send Message
               </button>
             </form>
-          </div>
+          </div> */}
         </div>
-      </div>
+      {/* </div> */}
     </section>
   );
 };

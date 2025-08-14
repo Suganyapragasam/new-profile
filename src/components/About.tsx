@@ -5,29 +5,31 @@ const About = () => {
   const highlights = [
     {
       icon: Code,
-      title: 'Clean Code',
-      description: 'Writing maintainable, scalable, and efficient code following best practices.'
+      title: 'Flutter & Dart',
+      description: 'Developing high-quality mobile & PWA applications using Flutter framework and Dart.'
     },
     {
       icon: Lightbulb,
-      title: 'Innovation',
-      description: 'Always exploring new technologies and creative solutions to complex problems.'
+      title: 'UI/UX Design',
+      description: 'Designing intuitive and user-friendly interfaces for mobile apps.'
     },
     {
       icon: Users,
       title: 'Collaboration',
-      description: 'Strong team player with excellent communication and leadership skills.'
+      description: 'Working with teams and clients to deliver projects efficiently.'
     },
     {
       icon: Trophy,
-      title: 'Excellence',
-      description: 'Committed to delivering high-quality results that exceed expectations.'
+      title: 'Integration & Testing',
+      description: 'Integrating APIs, Firebase, and performing thorough testing for stable apps.'
     }
   ];
 
   return (
-    <section id="about" className="py-20 bg-gray-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="about" className="py-20 bg-gray-50 w-full">
+      <div className="px-8 lg:px-16">
+        
+        {/* Title */}
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">
             About Me
@@ -35,58 +37,50 @@ const About = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-emerald-500 mx-auto rounded-full"></div>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Left column - Image */}
-          <div className="relative">
-            <div className="relative z-10">
-              <img
-                src="https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800"
-                alt="About me"
-                className="rounded-2xl shadow-2xl w-full"
-              />
-            </div>
-            <div className="absolute -top-6 -right-6 w-full h-full bg-gradient-to-br from-blue-600 to-emerald-500 rounded-2xl -z-10"></div>
-          </div>
-
+        {/* Main content full width */}
+        {/* <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center w-full"> */}
           {/* Right column - Content */}
           <div className="space-y-8">
             <div className="space-y-6">
+              <div>
               <h3 className="text-2xl font-bold text-gray-900">
-                Passionate Developer with a Vision
+                Mobile App Developer | Flutter Specialist
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed">
-                With over 5 years of experience in software development, I specialize in creating 
-                robust, scalable applications that solve real-world problems. My journey began with 
-                a curiosity for how things work, which evolved into a passion for building 
-                innovative digital solutions.
+                I am a Mobile App Developer specializing in Flutter and Dart, creating sleek, responsive, 
+                and user-friendly applications. My focus is on clean architecture, efficient state management, 
+                and delivering high-quality solutions.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                I believe in the power of clean code, thoughtful design, and continuous learning. 
-                Whether working on complex backend systems or intuitive user interfaces, I strive 
-                to deliver excellence in every project.
+                Experienced in UI/UX design, custom widget development, Firebase integration, REST API integration, 
+                testing, debugging, and performance optimization. Committed to continuous learning and delivering 
+                apps that provide real value to users.
               </p>
+              </div>
             </div>
 
             {/* Stats */}
+            <div>
             <div className="grid grid-cols-3 gap-6 py-8 border-t border-gray-200">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">50+</div>
-                <div className="text-sm text-gray-500">Projects Completed</div>
-              </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-blue-600">5+</div>
                 <div className="text-sm text-gray-500">Years Experience</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-blue-600">20+</div>
-                <div className="text-sm text-gray-500">Happy Clients</div>
+                <div className="text-3xl font-bold text-blue-600">10+</div>
+                <div className="text-sm text-gray-500">Projects Completed</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-blue-600">3+</div>
+                <div className="text-sm text-gray-500">Companies Worked</div>
               </div>
             </div>
-          </div>
+            </div>
+          {/* </div> */}
         </div>
 
         {/* Highlights */}
-        <div className="mt-20">
+        <div className="mt-20 w-full">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {highlights.map((highlight, index) => (
               <div
